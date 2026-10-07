@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECE Basic Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#basics">ECE Basics</a>
+        <a href="#components">Components</a>
+        <a href="#calculator">Calculator</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#circuits">Circuits</a>
+    </nav>
+
+    <h1 id="home">Welcome to ECE Basic Learning</h1>
+
+    <p>Learn Electronics and Communication Engineering from the basics.</p>
+    <p>Choose a section above to start learning.</p>
+
+    <a href="#basics" class="btn">Start Learning</a>
+
+    <h2 id="components">Electronic Components</h2>
+
+    <div class="component" onclick="showResistor()">
+        <h3>Resistor</h3>
+        <p>A resistor is a component that opposes the flow of electric current.</p>
+    </div>
+
+    <div class="component" onclick="showLED()">
+        <h3>LED (Light Emitting Diode)</h3>
+        <p>An LED emits light when current flows through it.</p>
+    </div>
+
+    <div class="component" onclick="showBattery()">
+        <h3>Battery</h3>
+        <p>A battery provides electrical energy to power circuits.</p>
+    </div>
+
+    <div class="component" onclick="showCapacitor()">
+        <h3>Capacitor</h3>
+        <p>A capacitor stores electrical energy in an electric field.</p>
+    </div>
+
+    <div class="component" onclick="showDiode()">
+        <h3>Diode</h3>
+        <p>A diode allows current to flow in one direction only.</p>
+    </div>
+
+    <div class="component" onclick="showTransistor()">
+        <h3>Transistor</h3>
+        <p>A transistor is used to amplify or switch electronic signals.</p>
+    </div>
+
+    <h2 id="basics">ECE Basics</h2>
+
+    <div class="component" onclick="showVoltage()">
+        <h3>Voltage</h3>
+        <p>Voltage is the electric potential difference measured in Volts (V).</p>
+    </div>
+
+    <div class="component" onclick="showCurrent()">
+        <h3>Current</h3>
+        <p>Current is the flow of electric charge measured in Amperes (A).</p>
+    </div>
+
+    <div class="component" onclick="showResistance()">
+        <h3>Resistance</h3>
+        <p>Resistance opposes the flow of current, measured in Ohms (Ω).</p>
+    </div>
+
+    <div class="component" onclick="showPower()">
+        <h3>Power</h3>
+        <p>Power is the rate of energy consumption measured in Watts (W).</p>
+    </div>
+
+    <div class="component" onclick="showACDC()">
+        <h3>AC and DC</h3>
+        <p>DC flows in one direction. AC alternates direction periodically.</p>
+    </div>
+
+    <h2 id="calculator">Ohm's Law Calculator</h2>
+
+    <div class="calculator">
+        <label>Voltage (V)</label>
+        <input type="number" id="voltage" placeholder="Enter voltage">
+
+        <label>Current (I)</label>
+        <input type="number" id="current" placeholder="Enter current">
+
+        <label>Resistance (Ω)</label>
+        <input type="number" id="resistance" placeholder="Enter resistance">
+
+        <button onclick="calculateOhm()">Calculate</button>
+
+        <p id="result">Result = </p>
+    </div>
+
+    <h2 id="quiz">ECE Beginner Quiz</h2>
+
+    <div class="quiz">
+        <p><strong>1. What is the unit of Voltage?</strong></p>
+        <button onclick="checkAnswer(1, 'A')">A. Volt</button>
+        <button onclick="checkAnswer(1, 'B')">B. Ampere</button>
+        <button onclick="checkAnswer(1, 'C')">C. Ohm</button>
+
+        <p><strong>2. What is the unit of Current?</strong></p>
+        <button onclick="checkAnswer(2, 'A')">A. Watt</button>
+        <button onclick="checkAnswer(2, 'B')">B. Ampere</button>
+        <button onclick="checkAnswer(2, 'C')">C. Volt</button>
+
+        <p><strong>3. Which component stores electrical energy?</strong></p>
+        <button onclick="checkAnswer(3, 'A')">A. Resistor</button>
+        <button onclick="checkAnswer(3, 'B')">B. LED</button>
+        <button onclick="checkAnswer(3, 'C')">C. Capacitor</button>
+    </div>
+
+    <p id="quizResult">Choose an answer!</p>
+
+    <h2 id="circuits">Simple Circuits</h2>
+
+    <div class="component" onclick="showSeriesCircuit()">
+        <h3>Series Circuit</h3>
+        <p>Components are connected in a single loop.</p>
+    </div>
+
+    <div class="component" onclick="showParallelCircuit()">
+        <h3>Parallel Circuit</h3>
+        <p>Components are connected in multiple paths.</p>
+    </div>
+
+    <div class="component" onclick="showLEDCircuit()">
+        <h3>LED + Battery</h3>
+        <p>Simple circuit with an LED powered by a battery.</p>
+    </div>
+
+    <div class="component" onclick="showSwitchCircuit()">
+        <h3>Switch + LED</h3>
+        <p>Circuit with a switch to control the LED.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 ECE Basic Learning. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
